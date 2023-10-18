@@ -1,0 +1,22 @@
+% INTRODUCTION
+In recent years, there have been significant advancements in scaling Artificial Intelligence (AI) systems to large datasets and complex domains such as Natural Language Processing (NLP), Generative Adversarial Networks (GANs), and Deep Reinforcement Learning (RL). With these systems’ rise in competence and popularity, their safety and generalizability have surfaced as pivotal themes in AI research. Safety revolves around ensuring that AI systems operate reliably and predictably, while generalizability pertains to the ability of these systems to extend their learned knowledge and skills to new, unseen situations. Deep RL, which involves training deep neural networks to make sequential decisions in complex environments, has significantly benefitted from the rapid development of AI algorithms in modeling dynamic environments and acquiring powerful decision-making strategies. Therefore, exploring the effectiveness of algorithmic abilities beyond the confines of their training conditions stands as an ongoing and imperative research subject. 
+
+Integrating black-box algorithms in domains such as healthcare, autonomous driving, and robotics raises concerns regarding their safety and efficacy. The absence of transparency and inadequate model adaptation can result in hazardous actions, undesirable outcomes, or errors jeopardizing safety. In such situations, traditional trial-and-error reinforcement learning through online interaction may be infeasible. Offline RL (or batch RL) addresses this issue using a static dataset of previously collected experiences. It allows learning complex environmental dynamics without the risk of interacting with the environment. Offline reinforcement learning has shown effectiveness in various fields, including materials science, physics, economics, and recommender systems.
+
+
+The primary divide in offline RL arises from the use of a “dynamics model.” Model-free algorithms estimate the optimal policy directly from experience, i.e., they attempt to achieve the maximum outcome based on knowledge from states they have already visited. On the other hand, model-based methods take advantage of a dynamics model, which allows the agent to learn a representation of the environment. The dynamics model provides information on what action is required to reach certain states from the current one and the probabilities and rewards attached to that action. Model-based algorithms are a suitable choice for assessing generalization beyond the support of the offline data due to their supervised training procedure. By training on additional synthetic data, model-based algorithms can learn to generalize beyond the limited offline dataset (Rigter et al., 2022). In contrast, model-free methods directly encode bias into policy or value function learning, but their constrained policy search may limit generalization beyond the offline dataset (Wang et al., 2021). 
+
+However, given the nascency of offline RL and its model-based approaches, a comprehensive evaluation of what signifies generalizability and the mechanisms introduced to achieve it is absent. This sets the stage for exploring the crucial interplay between generalizability and model-based offline RL, highlighting the need to develop robust and reliable AI systems that can adapt and perform effectively in diverse and complex real-world scenarios. Hence, this study's central research focus is:
+
+\begin{flushleft}
+\textit{To what extent can we develop a taxonomy, formalization, and qualitative evaluation of generalization in model-based offline reinforcement learning methods?}
+\end{flushleft}
+
+The primary research question warrants a formalization of generalization, an inspection of fundamental model-based methods in this field, and a qualitative analysis of the novel approaches introduced to promote generalization. Therefore, the following sub-questions will support the main research question:
+
+
+\begin{itemize}
+    \item Q1
+    \item Q2
+    \item Q3
+\end{itemize}
