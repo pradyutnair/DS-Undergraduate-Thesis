@@ -7,8 +7,11 @@
 %\usepackage[left=3.12cm, right=3.12cm, top=2.4cm, bottom=2.4cm]{geometry}
 %all the other includes etc. are done in the thesis.sty file.
 \usepackage{thesis}
+
+
 \newcommand{\doctitle}{Generalization Perspective}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{fancy}  % Use the fancy page style
 \begin{document}
 
 %%% Title page
@@ -47,7 +50,8 @@ Your third committee member (usually the external member)\par
 \end{titlepage}
 
 \begin{abstract}
-\textsf{Write an abstract for your work. Replace each of the points below with one sentence (two if you must) and you have your abstract. Write it when you finished your entire report.\footnote{https://www.easterbrook.ca/steve/2010/01/how-to-write-a-scientific-abstract-in-six-easy-steps/}}
+\pagenumbering{roman}
+\textsf{Write an abstract for your work. Replace each of the points below with one sentence (two if you must) and you have your abstract. Write it when you finished your entire report.}
     
 \textsf{Introduction.} In one sentence, what’s the topic? Phrase it in a way that your reader will understand. If you’re writing a PhD thesis, your readers are the examiners – assume they are familiar with the general field of research, so you need to tell them specifically what topic your thesis addresses. Same advice works for scientific papers – the readers are the peer reviewers, and eventually others in your field interested in your research, so again they know the background work, but want to know specifically what topic your paper covers.
 
@@ -62,7 +66,6 @@ Your third committee member (usually the external member)\par
     
 \textsf{As a single sentence, what’s the key impact of your research? Here we’re not looking for the outcome of an experiment.} We’re looking for a summary of the implications. What’s it all mean? Why should other people care? What can they do with your research. (Essay folks: all the same questions apply: what conclusions did you draw, and why would anyone care about them?)
 \end{abstract}
-
 \tableofcontents
 
 
@@ -72,6 +75,8 @@ Your third committee member (usually the external member)\par
 \chapter{Introduction}\label{sec:introduction}
 %%% ===============================================================================
 
+\setcounter{page}{1}
+\pagenumbering{arabic}
 \include*{1_Introduction/introduction}
 
 
